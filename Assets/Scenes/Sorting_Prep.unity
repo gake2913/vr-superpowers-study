@@ -953,8 +953,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313439691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4, z: 2}
-  m_LocalScale: {x: 3, y: 0.8, z: 1}
+  m_LocalPosition: {x: 0, y: 0.4, z: 2.1}
+  m_LocalScale: {x: 3, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1974047816}
@@ -1374,6 +1374,90 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 382f236bc566c264f8395c0735b20563, type: 3}
+--- !u!1001 &5232625179015924080
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1231595302870428815, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1878563526}
+    - target: {fileID: 1231595302911304770, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231595302911304770, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.311
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231595302911304770, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231595302911304770, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.967
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231595302911304770, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231595302911304770, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231595302911304770, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231595302911304770, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231595302911304770, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231595302911304770, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231595302911304770, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231595302911304773, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_Name
+      value: Sorting Sphere Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231595303035970103, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1878563526}
+    - target: {fileID: 1231595303451633674, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1878563526}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db973d43266dbbc4ba0eec17e72d6e08, type: 3}
 --- !u!1001 &8511962375345548291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1404,7 +1488,7 @@ PrefabInstance:
     - target: {fileID: 8511962376247462423, guid: b56b6e7e0dab3f14ea2c9e64e5d3cff1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.658
+      value: 1.967
       objectReference: {fileID: 0}
     - target: {fileID: 8511962376247462423, guid: b56b6e7e0dab3f14ea2c9e64e5d3cff1,
         type: 3}
