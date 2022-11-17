@@ -8,6 +8,8 @@ public class TrainSpline : MonoBehaviour
     public Spline2DComponent Spline;
     public float Speed = 0.2f;
     public float SpeedModifier = 1f;
+    public float Offset = 0;
+    public TrainSpline[] SyncSpeedModifierWith;
 
     private float splinePos = 0;
     private Vector3 lastPos;
@@ -22,6 +24,11 @@ public class TrainSpline : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        foreach (TrainSpline ts in SyncSpeedModifierWith)
+        {
+            ts.SpeedModifier = SpeedModifier;   
+        }
+
         splinePos += Speed * SpeedModifier * Time.deltaTime;
 
         PlaceOnSpline();
@@ -29,7 +36,10 @@ public class TrainSpline : MonoBehaviour
 
     private void PlaceOnSpline()
     {
-        transform.position = Spline.InterpolateDistanceWorldSpace(splinePos);
+        float modPos = (splinePos - Offset) % Spline.Length;
+        if (modPos < 0) modPos += Spline.Length;
+
+        transform.position = Spline.InterpolateDistanceWorldSpace(modPos);
 
         Vector3 travelDirection = transform.position - lastPos;
         if (travelDirection != Vector3.zero)
