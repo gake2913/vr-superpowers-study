@@ -721,6 +721,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 222049227, guid: edcffe3d61d8b7844aadecf4d661799c, type: 3}
+      propertyPath: CorrectLayer.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
     - target: {fileID: 2044648491337270295, guid: edcffe3d61d8b7844aadecf4d661799c,
         type: 3}
       propertyPath: m_IsActive
@@ -1544,11 +1548,6 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1878563526}
-    - target: {fileID: 1231595302870428815, guid: db973d43266dbbc4ba0eec17e72d6e08,
-        type: 3}
-      propertyPath: m_InteractionLayers.m_Bits
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 1231595302911304770, guid: db973d43266dbbc4ba0eec17e72d6e08,
         type: 3}
       propertyPath: m_RootOrder
@@ -1614,11 +1613,6 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1878563526}
-    - target: {fileID: 1231595303035970103, guid: db973d43266dbbc4ba0eec17e72d6e08,
-        type: 3}
-      propertyPath: m_InteractionLayers.m_Bits
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1231595303451633674, guid: db973d43266dbbc4ba0eec17e72d6e08,
         type: 3}
       propertyPath: m_InteractionManager
@@ -1698,21 +1692,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1878563526}
-    - target: {fileID: 8511962376454046426, guid: b56b6e7e0dab3f14ea2c9e64e5d3cff1,
-        type: 3}
-      propertyPath: m_InteractionLayers.m_Bits
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8511962376635321442, guid: b56b6e7e0dab3f14ea2c9e64e5d3cff1,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1878563526}
-    - target: {fileID: 8511962376635321442, guid: b56b6e7e0dab3f14ea2c9e64e5d3cff1,
-        type: 3}
-      propertyPath: m_InteractionLayers.m_Bits
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8511962376787920479, guid: b56b6e7e0dab3f14ea2c9e64e5d3cff1,
         type: 3}
       propertyPath: m_InteractionManager
