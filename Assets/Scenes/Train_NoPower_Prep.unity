@@ -475,7 +475,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button Forward
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7296189318699066856, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
 --- !u!1001 &122341768
 PrefabInstance:
@@ -540,6 +541,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 122341768}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &282178191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7296189318846623593, guid: ac0bfa460ace7934aa08ab69acee1dae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1008360462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &282178192
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282178191}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &309613916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,7 +1670,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button Pause
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7296189318699066859, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
 --- !u!1001 &1026261260
 PrefabInstance:
@@ -2610,6 +2634,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2040988345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7296189318846623593, guid: ac0bfa460ace7934aa08ab69acee1dae,
+    type: 3}
+  m_PrefabInstance: {fileID: 7296189317518300590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &2040988346
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040988345}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1 &2049776044 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7296189318846623593, guid: ac0bfa460ace7934aa08ab69acee1dae,
+    type: 3}
+  m_PrefabInstance: {fileID: 93171734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &2049776045
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049776044}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2145069522
 GameObject:
   m_ObjectHideFlags: 0
@@ -2875,7 +2943,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button Play
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7296189318699066858, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
 --- !u!1 &8446374988559093565
 GameObject:

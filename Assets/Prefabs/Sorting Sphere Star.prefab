@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7514089649256131841}
   - component: {fileID: 4497964105650699997}
   - component: {fileID: 465078067923764355}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 796638423989448461}
   - component: {fileID: 4393684323576512019}
   - component: {fileID: 5203194780057540308}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 8511962375562517182}
   - component: {fileID: 8511962375562517183}
   - component: {fileID: 8511962375562517181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Half
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8511962375731994041}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,7 +320,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8511962375790167497}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Half
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8511962376247462423}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sorting Sphere Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,7 +385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8511962376404555362}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Half
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 8511962376454046427}
   - component: {fileID: 8511962376454046426}
   - component: {fileID: 8511962376454046425}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Socket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 8511962376635321436}
   - component: {fileID: 8511962376635321443}
   - component: {fileID: 8511962376635321442}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Second Piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,7 +695,7 @@ GameObject:
   - component: {fileID: 8511962376787920473}
   - component: {fileID: 8511962376787920472}
   - component: {fileID: 8511962376787920479}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: First Piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
