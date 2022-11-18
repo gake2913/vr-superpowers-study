@@ -1618,6 +1618,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1878563526}
+    - target: {fileID: 4043072575715060811, guid: db973d43266dbbc4ba0eec17e72d6e08,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db973d43266dbbc4ba0eec17e72d6e08, type: 3}
 --- !u!1001 &8511962375345548291
@@ -1630,7 +1635,7 @@ PrefabInstance:
     - target: {fileID: 6858121177109856798, guid: b56b6e7e0dab3f14ea2c9e64e5d3cff1,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8511962376247462416, guid: b56b6e7e0dab3f14ea2c9e64e5d3cff1,
         type: 3}
