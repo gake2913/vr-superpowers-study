@@ -24,9 +24,12 @@ public class TrainSpline : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach (TrainSpline ts in SyncSpeedModifierWith)
+        if (SyncSpeedModifierWith != null && SyncSpeedModifierWith.Length > 0)
         {
-            ts.SpeedModifier = SpeedModifier;   
+            foreach (TrainSpline ts in SyncSpeedModifierWith)
+            {
+                ts.SpeedModifier = SpeedModifier;
+            }
         }
 
         splinePos += Speed * SpeedModifier * Time.deltaTime;

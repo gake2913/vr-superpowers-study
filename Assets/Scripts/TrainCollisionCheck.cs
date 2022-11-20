@@ -32,7 +32,7 @@ public class TrainCollisionCheck : MonoBehaviour
             inCooldown = true;
 
             totalHits++;
-            Debug.Log("Hit Obstacle " + collision.gameObject.name + ". Total Hits: " + totalHits);
+            Logger.CreateLog("Hit Obstacle " + collision.gameObject.name + ". Total Hits: " + totalHits);
 
             foreach (Animator anim in Lightbars)
             {

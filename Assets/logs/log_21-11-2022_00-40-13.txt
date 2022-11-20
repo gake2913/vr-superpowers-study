@@ -1,0 +1,6 @@
+00:40.13: 
+00:40.13: SceneLoader: Loading Scene: Sorting_NoPower_Task
+00:40.13: SceneLoader: Scene Loading Progress: 90%
+00:40.14: SceneLoader: Scene Loading Progress: 100%
+00:40.14: SceneLoader: Scene Loading done.
+00:40.14: 

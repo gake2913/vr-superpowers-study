@@ -4,7 +4,25 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Sorting_NoPower_Prep.unity
+    guid: 3dad780044291d141995cb71dab47459
+  - enabled: 1
+    path: Assets/Scenes/Sorting_NoPower_Task.unity
+    guid: ea41aab7af5634449bb9374d63730c3f
+  - enabled: 1
+    path: Assets/Scenes/Sorting_NormalPower_Prep.unity
+    guid: 4b2c7d44ad43edc42a21fcee2ff3d0a0
+  - enabled: 1
+    path: Assets/Scenes/Sorting_NormalPower_Task.unity
+    guid: 1336b5d73b0fd4445a85beaec2339595
+  - enabled: 1
+    path: Assets/Scenes/Train_NoPower_Prep.unity
+    guid: 79f7ade947794e34abb1735896abdfa7
+  - enabled: 1
+    path: Assets/Scenes/Train_NoPower_Task.unity
+    guid: 557d4356c704e2846b6be73f576289c3
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}

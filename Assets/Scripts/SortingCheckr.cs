@@ -35,7 +35,7 @@ public class SortingCheckr : MonoBehaviour
                 SortedBalls.Add(collision.gameObject);
                 Lightbar.SetTrigger("Pulse_Green");
                 CorrectSorts++;
-                Debug.Log("Ball sorted correctly. Correct Sorts: " + CorrectSorts + ". Wrong Sorts: " + WrongSorts);
+                Logger.CreateLog("Ball sorted correctly. Correct Sorts: " + CorrectSorts + ". Wrong Sorts: " + WrongSorts);
             }
         }
         else
@@ -43,7 +43,7 @@ public class SortingCheckr : MonoBehaviour
             // wrong Ball inserted
             Lightbar.SetTrigger("Pulse_Red");
             WrongSorts++;
-            Debug.Log("Ball not sorted correctly. Correct Sorts: " + CorrectSorts + ". Wrong Sorts: " + WrongSorts);
+            Logger.CreateLog("Ball not sorted correctly. Correct Sorts: " + CorrectSorts + ". Wrong Sorts: " + WrongSorts);
         }
     }
 
