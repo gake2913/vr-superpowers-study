@@ -659,6 +659,7 @@ GameObject:
   - component: {fileID: 1359739735264352654}
   - component: {fileID: 1359739735264352689}
   - component: {fileID: 1359739735264352653}
+  - component: {fileID: 6056702946237463069}
   m_Layer: 6
   m_Name: XR Origin
   m_TagString: Untagged
@@ -745,6 +746,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PowerActive: 0
+--- !u!114 &6056702946237463069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359739735264352688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 353a95c4dc0af8e4588f852f7a2bfc41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1359739735371582554}
+  LeftController: {fileID: 1359739734232458933}
+  SeeThroughMaterial: {fileID: 2100000, guid: d7c241f6564f8004ab891bb633aba989, type: 2}
+  MaxAngle: 45
 --- !u!1 &1359739735358791887
 GameObject:
   m_ObjectHideFlags: 0
