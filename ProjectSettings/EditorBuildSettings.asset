@@ -23,6 +23,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Train_NoPower_Task.unity
     guid: 557d4356c704e2846b6be73f576289c3
+  - enabled: 1
+    path: Assets/Scenes/Sorting_WrongPower_Prep.unity
+    guid: 106a842af330d974d8b33886627ef1bb
+  - enabled: 1
+    path: Assets/Scenes/Sorting_WrongPower_Task.unity
+    guid: 95765e7a6e430e54da9baf6a8ffc8a7e
+  - enabled: 1
+    path: Assets/Scenes/Train_NormalPower_Prep.unity
+    guid: ff3e6dbcd286dc2459af580d3e17af48
+  - enabled: 1
+    path: Assets/Scenes/Train_NormalPower_Task.unity
+    guid: a03b98e921147a94aab46ea9a31d6694
+  - enabled: 1
+    path: Assets/Scenes/Train_WrongPower_Prep.unity
+    guid: f4272eaa99182c64a9932e065facf7e2
+  - enabled: 1
+    path: Assets/Scenes/Train_WrongPower_Task.unity
+    guid: 78ca4b240dd0f6b40ad8f76570541f35
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
