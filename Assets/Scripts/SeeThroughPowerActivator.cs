@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerActivator : MonoBehaviour
+public class SeeThroughPowerActivator : MonoBehaviour
 {
 
     public Transform Camera;

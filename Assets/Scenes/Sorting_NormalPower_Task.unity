@@ -1467,43 +1467,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6056702946237463069, guid: 382f236bc566c264f8395c0735b20563,
         type: 3}
-      propertyPath: MaxAngle
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056702946237463069, guid: 382f236bc566c264f8395c0735b20563,
-        type: 3}
       propertyPath: SeeThroughLayer.m_Bits
       value: 4096
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056702946237463069, guid: 382f236bc566c264f8395c0735b20563,
-        type: 3}
-      propertyPath: SeeThroughLayerMask.m_Bits
-      value: 4096
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056702946237463069, guid: 382f236bc566c264f8395c0735b20563,
-        type: 3}
-      propertyPath: AlphaFalloff.m_Curve.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056702946237463069, guid: 382f236bc566c264f8395c0735b20563,
-        type: 3}
-      propertyPath: AlphaFalloff.m_Curve.Array.data[1].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056702946237463069, guid: 382f236bc566c264f8395c0735b20563,
-        type: 3}
-      propertyPath: AlphaFalloff.m_Curve.Array.data[1].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056702946237463069, guid: 382f236bc566c264f8395c0735b20563,
-        type: 3}
-      propertyPath: AlphaFalloff.m_Curve.Array.data[1].inSlope
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056702946237463069, guid: 382f236bc566c264f8395c0735b20563,
-        type: 3}
-      propertyPath: AlphaFalloff.m_Curve.Array.data[1].outSlope
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 382f236bc566c264f8395c0735b20563, type: 3}

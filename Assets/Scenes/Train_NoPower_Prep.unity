@@ -2726,6 +2726,8 @@ MonoBehaviour:
   Spline: {fileID: 402035643}
   Speed: 0.2
   SpeedModifier: 1
+  Offset: 0
+  SyncSpeedModifierWith: []
 --- !u!1001 &1359739736023343406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2808,6 +2810,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: XR Origin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056702946237463069, guid: 382f236bc566c264f8395c0735b20563,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 382f236bc566c264f8395c0735b20563, type: 3}
