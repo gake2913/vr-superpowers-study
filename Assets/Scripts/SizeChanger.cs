@@ -55,12 +55,14 @@ public class SizeChanger : MonoBehaviour
         if (currentSize == BigSize)
         {
             // Shrink to 1
+            Logger.CreateLog("Changing size to Normal");
             StartCoroutine(SizeChangeAnimation(1));
         }
 
         if (currentSize == 1)
         {
             // shrink to small size
+            Logger.CreateLog("Changing size to Small");
             StartCoroutine(SizeChangeAnimation(SmallSize));
         }
     }
@@ -72,12 +74,14 @@ public class SizeChanger : MonoBehaviour
         if (currentSize == SmallSize)
         {
             // grow to 1
+            Logger.CreateLog("Changing size to Normal");
             StartCoroutine(SizeChangeAnimation(1));
         }
 
         if (currentSize == 1)
         {
             // grow to big size
+            Logger.CreateLog("Changing size to Big");
             StartCoroutine(SizeChangeAnimation(BigSize));
         }
     }
