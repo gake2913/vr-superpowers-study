@@ -48,6 +48,10 @@ public class TrainSpline : MonoBehaviour
         if (travelDirection != Vector3.zero)
         {
             Quaternion rot = Quaternion.LookRotation(travelDirection, transform.up);
+            if (SpeedModifier < 0)
+            {
+                rot = Quaternion.LookRotation(-travelDirection, transform.up);
+            }
             transform.rotation = rot;
         }
 
