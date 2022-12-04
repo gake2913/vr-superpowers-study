@@ -8,11 +8,23 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
 
+    public static SceneLoader Instance;
+
     public Animator FadeToBlackAnimator;
     public float SwitchSceneDelay = 1f;
 
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+            return;
+        }
+
         DontDestroyOnLoad(this);
     }
 
