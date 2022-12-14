@@ -2753,8 +2753,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RightHand: {fileID: 1359739736023343408}
   Body: {fileID: 1359739736023343407}
-  MinDistance: 0.3
-  MaxDistance: 0.7
+  MinDistance: 0.5
+  MaxDistance: 1
 --- !u!1001 &1359739736023343406
 PrefabInstance:
   m_ObjectHideFlags: 0
