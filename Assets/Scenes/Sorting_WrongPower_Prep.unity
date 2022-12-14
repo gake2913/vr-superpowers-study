@@ -1804,10 +1804,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SmallSize: 0.5
   BigSize: 1.5
-  ShrinkHeadBelow: 1
-  GrowHeadAbove: 1.7
-  HandHeadDifference: 0.2
-  AnimationSpeed: 1
+  ShrinkHeadBelow: 1.1
+  GrowHeadAbove: 1.5
+  HandHeadDifference: 0.15
+  AnimationSpeed: 3
   AnimationCurve:
     serializedVersion: 2
     m_Curve:

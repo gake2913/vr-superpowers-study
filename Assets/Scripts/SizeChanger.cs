@@ -20,6 +20,9 @@ public class SizeChanger : MonoBehaviour
     private float currentSize = 1;
     private bool triggerLocked = false;
 
+    private bool shrinking = false;
+    private bool growing = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,30 +37,36 @@ public class SizeChanger : MonoBehaviour
             float handBelow = Head.localPosition.y - HandHeadDifference;
             if (LeftHand.localPosition.y < handBelow && RightHand.localPosition.y < handBelow)
             {
+                shrinking = true;
                 Shrink();
             }
+            else shrinking = false;
         }
+        else shrinking = false;
         
         if (Head.localPosition.y > GrowHeadAbove)
         {
             float handAbove = Head.localPosition.y + HandHeadDifference;
             if (LeftHand.localPosition.y > handAbove && RightHand.localPosition.y > handAbove)
             {
+                growing = true;
                 Grow();
             }
+            else growing = false;
         }
+        else growing = false;
     }
 
     private void Shrink()
     {
         if (triggerLocked) return;
 
-        if (currentSize == BigSize)
+        /*if (currentSize == BigSize)
         {
             // Shrink to 1
             Logger.CreateLog("Changing size to Normal");
             StartCoroutine(SizeChangeAnimation(1));
-        }
+        }*/
 
         if (currentSize == 1)
         {
@@ -71,12 +80,12 @@ public class SizeChanger : MonoBehaviour
     {
         if (triggerLocked) return;
 
-        if (currentSize == SmallSize)
+        /*if (currentSize == SmallSize)
         {
             // grow to 1
             Logger.CreateLog("Changing size to Normal");
             StartCoroutine(SizeChangeAnimation(1));
-        }
+        }*/
 
         if (currentSize == 1)
         {
@@ -96,11 +105,13 @@ public class SizeChanger : MonoBehaviour
             yield return new WaitForEndOfFrame();
             t += Time.deltaTime / AnimationSpeed;
 
+            if (!growing && !shrinking) break;
+
             float scale = Mathf.Lerp(currentSize, target, AnimationCurve.Evaluate(t));
-            transform.localScale = Vector3.one * scale;
+            transform.localScale = Vector3.up * scale;
         }
 
-        transform.localScale = Vector3.one * target;
+        transform.localScale = Vector3.up * target;
         currentSize = target;
         triggerLocked = false;
     }
