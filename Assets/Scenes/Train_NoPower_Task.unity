@@ -473,6 +473,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button Forward
       objectReference: {fileID: 0}
+    - target: {fileID: 7296189318846623593, guid: ac0bfa460ace7934aa08ab69acee1dae,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7296189318699066856, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
@@ -1952,6 +1957,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button Pause
       objectReference: {fileID: 0}
+    - target: {fileID: 7296189318846623593, guid: ac0bfa460ace7934aa08ab69acee1dae,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7296189318699066859, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
@@ -3126,6 +3136,80 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.37465924, y: 0.30262813, z: 0.8122026}
   m_Center: {x: 0.000000014901161, y: 0.15131499, z: 0.015900075}
+--- !u!1001 &1954563954
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 949855208475296396, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_Name
+      value: Train Lever
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.818
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2637459145991621428, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: Train
+      value: 
+      objectReference: {fileID: 2145069524}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d131240edfeef0d41a064357fcc52d24, type: 3}
 --- !u!1001 &1966189887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3711,6 +3795,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296189318846623593, guid: ac0bfa460ace7934aa08ab69acee1dae,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7296189318699066858, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
