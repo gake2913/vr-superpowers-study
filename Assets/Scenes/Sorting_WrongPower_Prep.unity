@@ -1790,7 +1790,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1359739736023343406}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1359739736023343411
+--- !u!114 &1359739736023343412
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1799,42 +1799,40 @@ MonoBehaviour:
   m_GameObject: {fileID: 1359739736023343407}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7caffc801b8fd254da57e4e70c9f9e7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 68374e1cad653d84ab85e957e5d78964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SmallSize: 0.5
   BigSize: 1.5
-  ShrinkHeadBelow: 1.1
-  GrowHeadAbove: 1.5
-  HandHeadDifference: 0.15
-  AnimationSpeed: 3
-  AnimationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   Head: {fileID: 1359739736023343410}
   LeftHand: {fileID: 1359739736023343409}
   RightHand: {fileID: 1359739736023343408}
+  LeftGrip:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Grip
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 2e93cc77-e8f4-457f-829b-b5a818ed2076
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  RightGrip:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Grip
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 6785fe21-f16f-457c-a6e2-ad9825f17202
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
 --- !u!1001 &5232625179015924080
 PrefabInstance:
   m_ObjectHideFlags: 0
