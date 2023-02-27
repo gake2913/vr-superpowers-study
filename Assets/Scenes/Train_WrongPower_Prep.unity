@@ -272,6 +272,105 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &49367594
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 949855208193325704, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: Train
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208193325719, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208294481146, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208294481147, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: Train
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296396, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_Name
+      value: Train Lever
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.818
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208475296397, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949855208505920779, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2637459145991621428, guid: d131240edfeef0d41a064357fcc52d24,
+        type: 3}
+      propertyPath: Train
+      value: 
+      objectReference: {fileID: 2145069524}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d131240edfeef0d41a064357fcc52d24, type: 3}
 --- !u!1001 &52319383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -474,6 +573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button Forward
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296189318846623593, guid: ac0bfa460ace7934aa08ab69acee1dae,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7296189318699066856, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
@@ -1669,6 +1773,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296189318846623593, guid: ac0bfa460ace7934aa08ab69acee1dae,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7296189318699066859, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
@@ -2969,6 +3078,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296189318846623593, guid: ac0bfa460ace7934aa08ab69acee1dae,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7296189318699066858, guid: ac0bfa460ace7934aa08ab69acee1dae, type: 3}
