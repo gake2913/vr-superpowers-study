@@ -21,9 +21,12 @@ public class SizeChangerContinuous : MonoBehaviour
     private float currentSize = 1;
 
     private bool bothGripsPressed = false;
-    private Vector3 startMiddlePosition;
-    private Vector3 currentMiddlePosition;
+    private float startMiddlePosition;
+    private float currentMiddlePosition;
     private float currentDistance = 0;
+
+    private Vector3 headStart;
+    private float bodyStartY;
 
     // Start is called before the first frame update
     void Start()
@@ -44,13 +47,15 @@ public class SizeChangerContinuous : MonoBehaviour
             if (!lastPressed)
             {
                 // First Frame with both pressed
-                startMiddlePosition = HandMiddle();
+                startMiddlePosition = HandMiddleY();
+                headStart = Head.position;
+                bodyStartY = transform.position.y;
             }
 
-            currentMiddlePosition = HandMiddle();
-            currentDistance = currentMiddlePosition.y - startMiddlePosition.y;
+            currentMiddlePosition = HandMiddleY();
+            currentDistance = currentMiddlePosition - startMiddlePosition;
 
-            float sizeChange = currentDistance * 0.5f * Time.deltaTime;
+            float sizeChange = currentDistance * 2f * Time.deltaTime;
             currentSize += sizeChange;
 
             if (currentSize < SmallSize)
@@ -67,9 +72,9 @@ public class SizeChangerContinuous : MonoBehaviour
 
             transform.localScale = Vector3.one * currentSize;
 
-            Vector3 correction = (Head.position - transform.position) * (sizeChange / 2f);
-            correction.y = 0;
-            transform.position -= correction;
+            Vector3 headError = headStart - Head.position;
+            headError.y = 0;
+            transform.position += headError;
         }
     }
 
@@ -79,7 +84,14 @@ public class SizeChangerContinuous : MonoBehaviour
         return LeftHand.position + to * 0.5f;
     }
 
-    private void OnDrawGizmos()
+    private float HandMiddleY()
+    {
+        float y = (RightHand.position.y + LeftHand.position.y) / 2f;
+        float rel = y - transform.position.y;
+        return rel / currentSize;
+    }
+
+    /*private void OnDrawGizmos()
     {
         if (bothGripsPressed)
         {
@@ -92,7 +104,7 @@ public class SizeChangerContinuous : MonoBehaviour
             Gizmos.color = Color.yellow;
             Gizmos.DrawLine(startMiddlePosition, startMiddlePosition + Vector3.up * currentDistance);
         }
-    }
+    }*/
 
     // Code from ActionBasedController in XR Toolkit
     private bool isPressed(InputAction action)
