@@ -28,10 +28,12 @@ public class SizeChangerContinuous : MonoBehaviour
     private Vector3 headStart;
     private float bodyStartY;
 
+    private CharacterController characterController;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        characterController = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -71,6 +73,7 @@ public class SizeChangerContinuous : MonoBehaviour
             }
 
             transform.localScale = Vector3.one * currentSize;
+            characterController.stepOffset = 0.3f * currentSize;
 
             Vector3 headError = headStart - Head.position;
             headError.y = 0;
@@ -121,4 +124,5 @@ public class SizeChangerContinuous : MonoBehaviour
         return action.triggered || action.phase == InputActionPhase.Performed;
     }
 #endif
+
 }
