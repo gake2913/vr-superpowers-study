@@ -10,6 +10,7 @@ public class StudyLevelManagement : MonoBehaviour
 
     public GameObject[] OnlyC1Objects, OnlyC23Objects;
     public GameObject PrepRoom;
+    public GameObject LeftHandDirect, LeftHandRay;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,9 @@ public class StudyLevelManagement : MonoBehaviour
             // ### C1 ###
 
             SizeChanger.enabled = true;
+
+            LeftHandDirect.SetActive(true);
+            LeftHandRay.SetActive(false);
 
             // hide C2 and C3 Objects
             foreach (GameObject obj in OnlyC23Objects)
@@ -45,6 +49,9 @@ public class StudyLevelManagement : MonoBehaviour
 
             SizeChanger.enabled = false;
 
+            LeftHandDirect.SetActive(true);
+            LeftHandRay.SetActive(false);
+
             // hide C1 Objects
             foreach (GameObject obj in OnlyC1Objects)
             {
@@ -63,6 +70,9 @@ public class StudyLevelManagement : MonoBehaviour
             // ### C3 ###
 
             SizeChanger.enabled = false;
+
+            LeftHandDirect.SetActive(false);
+            LeftHandRay.SetActive(true);
 
             // hide C1 Objects
             foreach (GameObject obj in OnlyC1Objects)
