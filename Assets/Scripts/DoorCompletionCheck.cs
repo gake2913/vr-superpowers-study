@@ -29,6 +29,9 @@ public class DoorCompletionCheck : MonoBehaviour
         if (checkAllActive())
         {
             anim.SetTrigger("Open");
+            Logger.CreateLog("");
+            Logger.CreateLog("### All Buttons are activated. ###", this);
+            Logger.CreateLog("");
         }
     }
 

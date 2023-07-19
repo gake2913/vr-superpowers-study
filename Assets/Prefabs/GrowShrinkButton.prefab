@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1234405272234521979}
   - component: {fileID: 7516697891768503225}
   - component: {fileID: 7516697891768503223}
+  - component: {fileID: 9110211986991094097}
   m_Layer: 0
   m_Name: GrowShrinkButton
   m_TagString: Untagged
@@ -219,6 +220,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &9110211986991094097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048919382101842722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3ca3f0bcdd72894d913ca2209bbe1de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomNumber: 1
 --- !u!1001 &1399566097876568707
 PrefabInstance:
   m_ObjectHideFlags: 0

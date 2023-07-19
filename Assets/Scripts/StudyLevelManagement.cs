@@ -41,6 +41,8 @@ public class StudyLevelManagement : MonoBehaviour
             { 
                 obj.SetActive(true); 
             }
+
+            Logger.CreateLog("### Loaded configuration C1. ###");
         }
         
         if (Keyboard.current.digit2Key.wasPressedThisFrame)
@@ -63,6 +65,8 @@ public class StudyLevelManagement : MonoBehaviour
             {
                 obj.SetActive(true);
             }
+
+            Logger.CreateLog("### Loaded configuration C2. ###");
         }
 
         if (Keyboard.current.digit3Key.wasPressedThisFrame)
@@ -85,11 +89,15 @@ public class StudyLevelManagement : MonoBehaviour
             {
                 obj.SetActive(true);
             }
+
+            Logger.CreateLog("### Loaded configuration C3. ###");
         }
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             PrepRoom.SetActive(false);
+            Logger.CreateLog("### Started task. ###");
+            Logger.CreateLog("");
         }
 
     }

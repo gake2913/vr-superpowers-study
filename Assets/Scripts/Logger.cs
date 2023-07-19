@@ -20,7 +20,7 @@ public class Logger
                 Directory.CreateDirectory(directory);
             }
 
-            string timestamp = DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss");
+            string timestamp = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
             currentPath = directory + "log_" + timestamp + ".txt";
 
             Debug.Log("Creating new log at: " + currentPath);
@@ -28,12 +28,7 @@ public class Logger
             // create file and write log
             using (StreamWriter sw = File.CreateText(currentPath))
             {
-                string loggedString = DateTime.Now.ToString("HH:mm.ss") + ": ";
-                if (reference != null) loggedString += reference.GetType().Name + ": ";
-                loggedString += log;
-
-                sw.WriteLine(loggedString);
-                Debug.Log("Created Log: \"" + loggedString + "\"");
+                WriteToStream(log, sw, reference);
             }
         }
         else
@@ -41,14 +36,19 @@ public class Logger
             // append to current log file
             using (StreamWriter sw = File.AppendText(currentPath))
             {
-                string loggedString = DateTime.Now.ToString("HH:mm.ss") + ": ";
-                if (reference != null) loggedString += reference.GetType().Name + ": ";
-                loggedString += log;
-
-                sw.WriteLine(loggedString);
-                Debug.Log("Created Log: \"" + loggedString + "\"");
+                WriteToStream(log, sw, reference);
             }
         }
+    }
+
+    private static void WriteToStream(string log, StreamWriter sw, object reference)
+    {
+        string loggedString = "[" + DateTime.Now.ToString("HH:mm:ss") + "]: ";
+        if (reference != null) loggedString += reference.GetType().Name + ": ";
+        loggedString += log;
+
+        sw.WriteLine(loggedString);
+        Debug.Log("Created Log: \"" + loggedString + "\"");
     }
 
 }
