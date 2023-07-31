@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,8 @@ public class StudyLevelManagement : MonoBehaviour
     public GameObject[] OnlyC1Objects, OnlyC23Objects;
     public GameObject PrepRoom;
     public GameObject LeftHandDirect, LeftHandRay;
+
+    private static float startTime;
 
     // Start is called before the first frame update
     void Start()
@@ -95,10 +98,25 @@ public class StudyLevelManagement : MonoBehaviour
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
+            startTime = Time.realtimeSinceStartup;
+
             PrepRoom.SetActive(false);
+            Logger.CreateLog("### Started stopwatch. ###");
             Logger.CreateLog("### Started task. ###");
             Logger.CreateLog("");
         }
 
     }
+
+    public static void stopTimer()
+    {
+        float endTime = Time.realtimeSinceStartup;
+        float deltaTime = endTime - startTime;
+
+        //string timeSeconds = String.Format("%f.2", deltaTime);
+        string timeMinutes = String.Format("%d min, %f.2 sec", deltaTime / 60, deltaTime % 60);
+
+        Logger.CreateLog("### stopwatch timer: " + timeMinutes + ". ###");
+    }
+
 }

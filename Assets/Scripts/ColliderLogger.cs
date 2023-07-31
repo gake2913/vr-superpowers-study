@@ -21,6 +21,7 @@ public class ColliderLogger : MonoBehaviour
         if (other.tag == "Player")
         {
             Logger.CreateLog("### Player has entered the Ending Room. ###");
+            StudyLevelManagement.stopTimer();
         }
     }
 }
