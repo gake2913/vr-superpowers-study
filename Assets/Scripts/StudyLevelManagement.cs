@@ -114,7 +114,7 @@ public class StudyLevelManagement : MonoBehaviour
         float deltaTime = endTime - startTime;
 
         //string timeSeconds = String.Format("%f.2", deltaTime);
-        string timeMinutes = String.Format("%d min, %f.2 sec", deltaTime / 60, deltaTime % 60);
+        string timeMinutes = String.Format("{0:F0} min, {1:F2} sec", deltaTime / 60, deltaTime % 60);
 
         Logger.CreateLog("### stopwatch timer: " + timeMinutes + ". ###");
     }
